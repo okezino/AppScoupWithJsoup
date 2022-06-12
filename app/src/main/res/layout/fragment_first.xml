@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.view.HomeFragment">
+
+    <TextView
+        android:id="@+id/taskA_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin"
+        android:text="@string/task_1_10th_character"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:paddingStart="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskA_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_1_10th_character"
+        android:textColor="@color/black"
+        android:background="#f4f4f4"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskA_placeholder" />
+
+    <TextView
+        android:id="@+id/taskB_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:paddingStart="@dimen/app_margin"
+        android:text="Task 2: Every 10th Character"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskA_value" />
+
+    <TextView
+        android:id="@+id/taskB_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="#f4f4f4"
+        android:text="Task 2: Every 10th Character"
+        android:layout_marginStart="@dimen/app_margin"
+        android:layout_marginEnd="@dimen/app_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskB_placeholder" />
+
+    <TextView
+        android:id="@+id/taskC_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:paddingStart="@dimen/app_margin"
+        android:text="Task 3: Unique Item"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskB_value" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f4f4f4"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:layout_marginBottom="@dimen/app_margin"
+        app:layout_constraintBottom_toTopOf="@+id/fetchData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskC_placeholder">
+
+        <TextView
+            android:id="@+id/taskC_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Task 3: Unique Item" />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/fetchData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_margin"
+        android:text="@string/get__data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
