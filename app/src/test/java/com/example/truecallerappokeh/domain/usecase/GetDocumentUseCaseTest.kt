@@ -3,17 +3,12 @@ package com.example.truecallerappokeh.domain.usecase
 import com.example.truecallerappokeh.data.model.DisplayData
 import com.example.truecallerappokeh.data.model.Resource
 import com.example.truecallerappokeh.data.repository.FakeMainRepository
-import com.example.truecallerappokeh.data.repository.MainRepository
-import com.jraska.livedata.test
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
-
-import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mock
 
 class GetDocumentUseCaseTest {
 
